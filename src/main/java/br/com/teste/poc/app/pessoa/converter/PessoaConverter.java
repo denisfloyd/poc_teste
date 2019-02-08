@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import br.com.teste.poc.app.pessoa.dto.PessoaDTO;
+import br.com.teste.poc.domain.cidade.service.CidadeService;
 import br.com.teste.poc.domain.pessoa.Pessoa;
 import br.eti.nexus.kernel.application.converter.ConverterDTO;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.util.RequisitionUtil;
@@ -22,6 +23,8 @@ public class PessoaConverter extends ConverterDTO<Pessoa, PessoaDTO> {
 	
 	@Autowired
 	private IMessageTranslator translator;
+	
+	@Autowired CidadeService cidadeService;
 
 	@Override
 	public PessoaDTO convertDTO(Pessoa model) {
@@ -38,12 +41,15 @@ public class PessoaConverter extends ConverterDTO<Pessoa, PessoaDTO> {
 
 	@Override
 	public Pessoa convertModel(PessoaDTO dto) {
+			
+		//Cidade c = cidadeService.buscarPorID(dto.get.getId());
 		
 		return Pessoa.builder()
 						.id(dto.getId())
 						.codigo(dto.getCode())
 						.nome(dto.getName())
 						.nascimento(new DateUtil().parseDate(dto.getBirth()))
+						.cidade(dto.getCity())
 						.build();
 	}
 

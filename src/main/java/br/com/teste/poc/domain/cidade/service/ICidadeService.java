@@ -47,4 +47,8 @@ public interface ICidadeService {
 	 */
 	void excluir(String id) throws NexusException;
 
+	/** 
+	 * Busca por ID
+	 */
+	Cidade buscarPorID(String id) throws NexusException; 
 }

@@ -3,6 +3,7 @@ package br.com.teste.poc.app.pessoa.dto;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.teste.poc.domain.cidade.Cidade;
 import br.com.teste.poc.domain.pessoa.Pessoa;
 import br.eti.nexus.kernel.application.dto.annotation.Attribute;
 import br.eti.nexus.kernel.application.dto.request.CollectionRequestDTO;
@@ -35,7 +36,9 @@ public class PessoaDTO extends SingleResponseDTO  {
 	
 	@Attribute(field="nascimento")
 	private String birth;
-	
+
+	@Attribute(field="id_cidade")
+	private Cidade city;
 	
 
 	public PessoaDTO(Pessoa p, CollectionRequestDTO request) {
@@ -57,6 +60,10 @@ public class PessoaDTO extends SingleResponseDTO  {
 		
 		if (attributes.isEmpty() || attributes.contains("birth")) {
         	this.birth = p.getNascimento() != null ? new DateUtil().formatDateTime(p.getNascimento()) : null;
+        }
+		
+		if (attributes.isEmpty() || attributes.contains("cidade")) {
+        	this.city = p.getCidade();
         }
 		
 	}

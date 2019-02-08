@@ -5,9 +5,12 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import br.com.teste.poc.domain.cidade.Cidade;
 import br.eti.nexus.kernel.domain.Model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -39,4 +42,10 @@ public class Pessoa implements Model {
 	@Temporal(TemporalType.DATE)
 	@Column(name = "birth")
 	private Date nascimento;
+	
+	//@Column(name = "id_cidade")
+	
+	@OneToOne
+	@JoinColumn(name = "id_cidade")
+	private Cidade cidade;
 }

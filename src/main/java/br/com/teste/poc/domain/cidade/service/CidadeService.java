@@ -199,5 +199,16 @@ public class CidadeService extends ValidadorDefault<Cidade> implements ICidadeSe
 		messageStack.addMessage(TypeMessage.success, "registro_excluido_com_sucesso");
 		log.debug("Sucesso ao excluir cidade com ID: " + id);
 	}
+	
+	@Override
+	public Cidade buscarPorID(String id) throws NexusException {
+
+		log.debug(" CidadeService.selecionarTodos() ");
+
+		Cidade cidade = repository.buscarPorID(id);
+		//Boolean hasNext = requisition.getHasNext();
+
+		return cidade;
+	}
 
 }
