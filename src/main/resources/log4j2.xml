@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+    <Properties>
+        <Property name="LOG_PATH">log</Property>
+        
+        <Property name="LOG_PATTERN">
+            %d{dd/MM/yyyy HH:mm:ss.SSS} %-5p (%F:%L) %m%n
+        </Property>
+        
+    </Properties>
+    
+    <Appenders>
+
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                pattern="${LOG_PATTERN}" />
+            </Console>
+
+            <!-- Console Padrão -->
+            <RollingFile name="ConsoleAppender"
+                fileName="${LOG_PATH}/boot.log"
+                filePattern="${LOG_PATH}/boot.log-%d{dd-MM-yyyy}-%i.log">
+                <PatternLayout>
+                    <Pattern>${LOG_PATTERN}</Pattern>
+                </PatternLayout>
+                <Policies>
+                    <SizeBasedTriggeringPolicy size="2 MB" />
+                </Policies>
+                <DefaultRolloverStrategy max="2" />
+            </RollingFile>
+
+            <!-- Nexus Core -->
+            <RollingFile name="CoreNexusAppender"
+                fileName="${LOG_PATH}/core.log"  
+                filePattern="${LOG_PATH}/core.log-%d{dd-MM-yyyy}-%i.log">
+                <PatternLayout>
+                    <Pattern>${LOG_PATTERN}</Pattern>
+                </PatternLayout>
+                <Policies>
+                    <SizeBasedTriggeringPolicy size="5 MB" />
+                </Policies>
+                <DefaultRolloverStrategy max="3" />
+            </RollingFile>
+
+            <!-- POC -->
+            <RollingFile name="POCAppender"
+                fileName="${LOG_PATH}/poc.log" 
+                filePattern="${LOG_PATH}/poc.log-%d{dd-MM-yyyy}-%i.log">
+                <PatternLayout>
+                    <Pattern>${LOG_PATTERN}</Pattern>
+                </PatternLayout>
+                <Policies>
+                    <SizeBasedTriggeringPolicy size="5 MB" />
+                </Policies>
+                <DefaultRolloverStrategy max="3" />
+            </RollingFile>
+
+        </Appenders>
+
+        <Loggers>
+
+            <Logger name="root" level="info" additivity="false">
+                <AppenderRef ref="ConsoleAppender" />
+                <AppenderRef ref="Console" />
+            </Logger>
+
+            <!-- Nexus Core -->
+            <Logger name="br.eti.nexus.kernel" level="error" additivity="false">
+                <AppenderRef ref="CoreNexusAppender" />
+                <AppenderRef ref="Console" />
+            </Logger>
+
+            <!-- POC -->
+            <Logger name="br.com.teste.poc" level="error" additivity="false">
+                <AppenderRef ref="POCAppender" />
+                <AppenderRef ref="Console" />
+            </Logger>
+
+        </Loggers>
+
+    </Configuration>
+
+
+
+
+
