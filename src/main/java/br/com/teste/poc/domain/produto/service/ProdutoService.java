@@ -5,12 +5,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.teste.poc.domain.pessoa.Pessoa;
-import br.com.teste.poc.domain.pessoa.repository.IPessoaRepository;
-import br.com.teste.poc.domain.pessoa.validator.PessoaPossuiCodigo;
-import br.com.teste.poc.domain.pessoa.validator.PessoaPossuiNome;
-import br.com.teste.poc.domain.pessoa.validator.ValidarCodigoPessoa;
-import br.com.teste.poc.domain.pessoa.validator.ValidarIDPessoa;
+import br.com.teste.poc.domain.produto.Produto;
+import br.com.teste.poc.domain.produto.repository.IProdutoRepository;
+import br.com.teste.poc.domain.produto.validator.ProdutoPossuiCodigo;
+import br.com.teste.poc.domain.produto.validator.ProdutoPossuiDesc;
+import br.com.teste.poc.domain.produto.validator.ValidarIDProduto;
 import br.eti.nexus.kernel.domain.validator.ValidadorDefault;
 import br.eti.nexus.kernel.exception.NexusException;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.model.PageModel;
@@ -24,19 +23,19 @@ import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 @Service
-public class ProdutoService extends ValidadorDefault<Pessoa> implements IProdutoService {
+public class ProdutoService extends ValidadorDefault<Produto> implements IProdutoService {
+	
+	@Autowired
+	private ProdutoPossuiCodigo possuiCodigo;
+	
+	@Autowired
+	private ProdutoPossuiDesc possuiDesc;
+	
+	//@Autowired
+	//private ValidarCodigoPessoa validarCodigo;
 
 	@Autowired
-	private PessoaPossuiCodigo possuiCodigo;
-
-	@Autowired
-	private PessoaPossuiNome possuiNome;
-
-	@Autowired
-	private ValidarCodigoPessoa validarCodigo;
-
-	@Autowired
-	private ValidarIDPessoa validarIDPessoa;
+	private ValidarIDProduto validarIDProduto;
 
 	@Autowired
 	private ErrorMessageStack errorStack;
@@ -45,13 +44,13 @@ public class ProdutoService extends ValidadorDefault<Pessoa> implements IProduto
 	private MessageStack messageStack;
 
 	@Autowired
-	private IPessoaRepository repository;
+	private IProdutoRepository repository;
 
 	@Autowired
-	private RequisitionUtil<Pessoa> requisition;
+	private RequisitionUtil<Produto> requisition;
 
 	@Override
-	protected void validations(Pessoa handler) {
+	protected void validations(Produto handler) {
 
 		log.debug(" PessoaService.validations() ");
 		log.debug(" Pessoa: " + handler);
@@ -63,23 +62,23 @@ public class ProdutoService extends ValidadorDefault<Pessoa> implements IProduto
 		}
 
 		// VALIDAR NOME DE PESSOA
-		if (!possuiNome.isValid(handler)) {
+		if (!possuiDesc.isValid(handler)) {
 			log.error("Nome nulo ou vazio.");
 			errorStack.addMessage("nome_vazio");
 		}
 
 		// VALIDAR DUPLICAÇÃO DE CÓDIGO
-		if (!validarCodigo.isValid(handler)) {
+		/*if (!validarCodigo.isValid(handler)) {
 			log.error("Código já existe");
 			errorStack.addMessage("codigo_ja_existe");
-		}
+		} */
 	}
 
 	@Override
-	public Pessoa inserir(Pessoa p) throws NexusException {
+	public Produto inserir(Produto p) throws NexusException {
 
-		log.debug(" PessoaService.inserir() ");
-		log.debug(" Pessoa: " + p);
+		log.debug(" ProdutoService.inserir() ");
+		log.debug(" Produto: " + p);
 
 		// EXECUÇÃO DAS VALIDAÇÕES.
 		validations(p);
@@ -99,7 +98,7 @@ public class ProdutoService extends ValidadorDefault<Pessoa> implements IProduto
 
 		try {
 
-			// SALVAR PESSOA
+			// SALVAR PRODUTO
 			repository.salvar(p);
 
 			// GERAR MENSAGEM DE SUCESSO
@@ -119,12 +118,12 @@ public class ProdutoService extends ValidadorDefault<Pessoa> implements IProduto
 	}
 
 	@Override
-	public Pessoa atualizar(String id, Pessoa p) throws NexusException {
+	public Produto atualizar(String id, Produto p) throws NexusException {
 
-		log.debug(" PessoaService.inserir() ");
-		log.debug(" Pessoa: " + p);
+		log.debug(" ProdutoService.inserir() ");
+		log.debug(" Produto: " + p);
 
-		if (!validarIDPessoa.isValid(id)) {
+		if (!validarIDProduto.isValid(id)) {
 			log.debug("Registro inválido.");
 			errorStack.addMessage("registro_invalido");
 
@@ -174,14 +173,14 @@ public class ProdutoService extends ValidadorDefault<Pessoa> implements IProduto
 	}
 
 	@Override
-	public PageModel<Pessoa> selecionarTodos() throws NexusException {
+	public PageModel<Produto> selecionarTodos() throws NexusException {
 
 		log.debug(" PessoaService.selecionarTodos() ");
 
-		List<Pessoa> pessoas = repository.selecionarTodos();
+		List<Produto> produtos = repository.selecionarTodos();
 		Boolean hasNext = requisition.getHasNext();
 
-		return new PageModel<>(pessoas, hasNext);
+		return new PageModel<>(produtos, hasNext);
 	}
 
 	@Override
@@ -190,7 +189,7 @@ public class ProdutoService extends ValidadorDefault<Pessoa> implements IProduto
 		log.debug(" PessoaService.excluir() ");
 		log.debug(" ID: " + id);
 
-		if (!validarIDPessoa.isValid(id)) {
+		if (!validarIDProduto.isValid(id)) {
 			log.debug("Registro inválido.");
 			errorStack.addMessage("registro_invalido");
 
@@ -201,7 +200,7 @@ public class ProdutoService extends ValidadorDefault<Pessoa> implements IProduto
 			throw NexusException.of(error);
 		}
 
-		repository.excluirPessoa(id);
+		repository.excluirProduto(id);
 		
 		// GERAR MENSAGEM DE SUCESSO
 		messageStack.addMessage(TypeMessage.success, "registro_excluido_com_sucesso");

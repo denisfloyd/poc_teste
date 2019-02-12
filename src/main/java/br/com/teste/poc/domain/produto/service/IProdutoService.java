@@ -1,28 +1,26 @@
 package br.com.teste.poc.domain.produto.service;
 
-import br.com.teste.poc.domain.pessoa.Pessoa;
+import br.com.teste.poc.domain.produto.Produto;
 import br.eti.nexus.kernel.exception.NexusException;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.model.PageModel;
 
 /**
  * Interface responsável pelos métodos de Negócio do Domínio Pessoa.
- * 
- * @author Patrick Francis Gomes Rocha - patrick.gomes@nexus.eti.br
- *
+ * @author Denis M. Ladeira
  */
 public interface IProdutoService {
 
 	/**
-	 * Inserir Pessoa.
+	 * Inserir Produto.
 	 * 
 	 * @param p
 	 * @return
 	 * @throws NexusException
 	 */
-	Pessoa inserir(Pessoa p) throws NexusException;
+	Produto inserir(Produto p) throws NexusException;
 
 	/**
-	 * Autualizar Pessoa.
+	 * Atualizar Produto.
 	 * 
 	 * @param p
 	 * @param id
@@ -30,18 +28,18 @@ public interface IProdutoService {
 	 * @return
 	 * @throws NexusException
 	 */
-	Pessoa atualizar(String id, Pessoa p) throws NexusException;
+	Produto atualizar(String id, Produto p) throws NexusException;
 
 	/**
-	 * Método responsável pela seleção de pessoas.
+	 * Método responsável pela seleção de produtos.
 	 * 
 	 * @return
 	 * @throws NexusException
 	 */
-	PageModel<Pessoa> selecionarTodos() throws NexusException;
+	PageModel<Produto> selecionarTodos() throws NexusException;
 
 	/**
-	 * Excluir pessoa.
+	 * Excluir produto.
 	 * 
 	 * @param id
 	 * @throws NexusException

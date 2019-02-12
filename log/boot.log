@@ -5191,3 +5191,53 @@ Caused by: org.hibernate.AnnotationException: @Column(s) not allowed on a @OneTo
 08/02/2019 17:52:31.284 INFO  (AbstractEntityManagerFactoryBean.java:597) Closing JPA EntityManagerFactory for persistence unit 'default'
 08/02/2019 17:52:31.285 INFO  (HikariDataSource.java:350) HikariPool-2 - Shutdown initiated...
 08/02/2019 17:52:31.294 INFO  (HikariDataSource.java:352) HikariPool-2 - Shutdown completed.
+12/02/2019 16:50:01.655 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12/02/2019 16:50:01.661 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12/02/2019 16:50:03.301 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+12/02/2019 16:50:03.490 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 180ms. Found 4 repository interfaces.
+12/02/2019 16:50:04.168 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb81de0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12/02/2019 16:50:04.608 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+12/02/2019 16:50:04.624 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+12/02/2019 16:50:04.646 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+12/02/2019 16:50:04.647 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+12/02/2019 16:50:04.657 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+12/02/2019 16:50:04.774 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+12/02/2019 16:50:04.774 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 3112 ms
+12/02/2019 16:50:04.932 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+12/02/2019 16:50:05.236 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+12/02/2019 16:50:05.418 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+12/02/2019 16:50:05.511 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+12/02/2019 16:50:05.513 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+12/02/2019 16:50:05.699 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+12/02/2019 16:50:05.889 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+12/02/2019 16:50:05.907 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+12/02/2019 16:50:05.914 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@13de6a6
+12/02/2019 16:50:06.636 INFO  (AbstractEntityManagerFactoryBean.java:415) Initialized JPA EntityManagerFactory for persistence unit 'default'
+12/02/2019 16:50:07.595 INFO  (OptionalLiveReloadServer.java:57) LiveReload server is running on port 35729
+12/02/2019 16:50:07.650 INFO  (PropertySourcedRequestMappingHandlerMapping.java:69) Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12/02/2019 16:50:07.708 WARN  (JpaBaseConfiguration.java:234) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12/02/2019 16:50:07.941 INFO  (DocumentationPluginsBootstrapper.java:160) Context refreshed
+12/02/2019 16:50:07.958 INFO  (DocumentationPluginsBootstrapper.java:163) Found 1 custom documentation plugin(s)
+12/02/2019 16:50:08.011 INFO  (ApiListingReferenceScanner.java:41) Scanning for api listing references
+12/02/2019 16:50:08.184 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_1
+12/02/2019 16:50:08.198 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_1
+12/02/2019 16:50:08.214 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_1
+12/02/2019 16:50:08.217 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_1
+12/02/2019 16:50:08.220 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_2
+12/02/2019 16:50:08.239 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_2
+12/02/2019 16:50:08.249 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_2
+12/02/2019 16:50:08.253 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_2
+12/02/2019 16:50:08.288 INFO  (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8080"]
+12/02/2019 16:50:08.324 INFO  (TomcatWebServer.java:204) Tomcat started on port(s): 8080 (http) with context path ''
+12/02/2019 16:50:21.169 INFO  (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+12/02/2019 16:50:21.169 INFO  (FrameworkServlet.java:524) Initializing Servlet 'dispatcherServlet'
+12/02/2019 16:50:21.183 INFO  (FrameworkServlet.java:546) Completed initialization in 13 ms
+12/02/2019 16:50:21.780 WARN  (DispatcherServlet.java:1248) No mapping for GET /
+12/02/2019 16:50:21.832 WARN  (DispatcherServlet.java:1248) No mapping for GET /csrf
+12/02/2019 16:51:44.015 INFO  (QueryTranslatorFactoryInitiator.java:47) HHH000397: Using ASTQueryTranslatorFactory
+12/02/2019 16:52:53.602 INFO  (SpringApplicationAdminMXBeanRegistrar.java:164) Application shutdown requested.
+12/02/2019 16:52:53.609 INFO  (AbstractEntityManagerFactoryBean.java:597) Closing JPA EntityManagerFactory for persistence unit 'default'
+12/02/2019 16:52:53.613 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+12/02/2019 16:52:53.622 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.

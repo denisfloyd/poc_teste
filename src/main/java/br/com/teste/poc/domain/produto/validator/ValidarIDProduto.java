@@ -1,4 +1,4 @@
-package br.com.teste.poc.domain.pessoa.validator;
+package br.com.teste.poc.domain.produto.validator;
 
 import java.util.function.Predicate;
 
@@ -10,10 +10,12 @@ import br.eti.nexus.kernel.domain.validator.Validator;
 
 /**
  * Classe responsável pela Validação de ID de Pessoa.
- * @author Denis M. Ladeira
+ * 
+ * @author Patrick Francis Gomes Rocha - patrick.gomes@nexus.eti.br
+ *
  */
 @Component
-public class ValidarIDPessoa implements Validator<String> {
+public class ValidarIDProduto implements Validator<String> {
 
 	@Autowired
 	private IPessoaRepository repository;

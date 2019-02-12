@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import br.eti.nexus.kernel.domain.Model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,7 +20,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Entity(name = "produto")
-public class Produto {
+public class Produto implements Model {
 	
 	@Id
 	@Column(length = 32)
@@ -34,5 +35,6 @@ public class Produto {
 
 	@Column(name = "unit_value")
 	private BigDecimal valor_unitario;
+
 	
 }
