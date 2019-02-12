@@ -5187,3 +5187,7 @@ Caused by: org.hibernate.AnnotationException: @Column(s) not allowed on a @OneTo
 08/02/2019 17:34:20.725 WARN  (DispatcherServlet.java:1248) No mapping for GET /
 08/02/2019 17:34:20.754 WARN  (DispatcherServlet.java:1248) No mapping for GET /csrf
 08/02/2019 17:34:32.845 INFO  (QueryTranslatorFactoryInitiator.java:47) HHH000397: Using ASTQueryTranslatorFactory
+08/02/2019 17:52:31.281 INFO  (SpringApplicationAdminMXBeanRegistrar.java:164) Application shutdown requested.
+08/02/2019 17:52:31.284 INFO  (AbstractEntityManagerFactoryBean.java:597) Closing JPA EntityManagerFactory for persistence unit 'default'
+08/02/2019 17:52:31.285 INFO  (HikariDataSource.java:350) HikariPool-2 - Shutdown initiated...
+08/02/2019 17:52:31.294 INFO  (HikariDataSource.java:352) HikariPool-2 - Shutdown completed.
