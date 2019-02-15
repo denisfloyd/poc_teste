@@ -5241,3 +5241,810 @@ Caused by: org.hibernate.AnnotationException: @Column(s) not allowed on a @OneTo
 12/02/2019 16:52:53.609 INFO  (AbstractEntityManagerFactoryBean.java:597) Closing JPA EntityManagerFactory for persistence unit 'default'
 12/02/2019 16:52:53.613 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
 12/02/2019 16:52:53.622 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+12/02/2019 17:52:46.559 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12/02/2019 17:52:46.567 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12/02/2019 17:52:47.720 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+12/02/2019 17:52:47.827 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 99ms. Found 4 repository interfaces.
+12/02/2019 17:52:48.317 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$60690ac0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12/02/2019 17:52:48.634 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+12/02/2019 17:52:48.647 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+12/02/2019 17:52:48.658 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+12/02/2019 17:52:48.659 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+12/02/2019 17:52:48.666 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+12/02/2019 17:52:48.773 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+12/02/2019 17:52:48.773 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 2204 ms
+12/02/2019 17:52:48.916 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+12/02/2019 17:52:49.055 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+12/02/2019 17:52:49.231 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+12/02/2019 17:52:49.295 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+12/02/2019 17:52:49.298 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+12/02/2019 17:52:49.423 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+12/02/2019 17:52:49.561 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+12/02/2019 17:52:49.575 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+12/02/2019 17:52:49.581 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@65658289
+12/02/2019 17:52:49.733 WARN  (AbstractApplicationContext.java:554) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+12/02/2019 17:52:49.735 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+12/02/2019 17:52:49.819 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+12/02/2019 17:52:49.821 INFO  (DirectJDKLog.java:173) Stopping service [Tomcat]
+12/02/2019 17:52:49.830 INFO  (ConditionEvaluationReportLoggingListener.java:142) 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+12/02/2019 17:52:49.840 ERROR (SpringApplication.java:858) Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at br.com.teste.poc.setup.TestePocApplication.main(TestePocApplication.java:27) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:634) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:347) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:466) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+12/02/2019 18:02:54.352 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12/02/2019 18:02:54.360 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12/02/2019 18:02:55.442 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+12/02/2019 18:02:55.538 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 90ms. Found 4 repository interfaces.
+12/02/2019 18:02:56.005 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$de827c9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12/02/2019 18:02:56.319 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+12/02/2019 18:02:56.346 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+12/02/2019 18:02:56.358 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+12/02/2019 18:02:56.359 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+12/02/2019 18:02:56.365 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+12/02/2019 18:02:56.470 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+12/02/2019 18:02:56.471 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 2110 ms
+12/02/2019 18:02:56.606 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+12/02/2019 18:02:56.765 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+12/02/2019 18:02:56.943 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+12/02/2019 18:02:57.000 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+12/02/2019 18:02:57.001 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+12/02/2019 18:02:57.128 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+12/02/2019 18:02:57.268 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+12/02/2019 18:02:57.282 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+12/02/2019 18:02:57.287 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@16669b6b
+12/02/2019 18:02:57.420 WARN  (AbstractApplicationContext.java:554) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+12/02/2019 18:02:57.421 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+12/02/2019 18:02:57.450 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+12/02/2019 18:02:57.452 INFO  (DirectJDKLog.java:173) Stopping service [Tomcat]
+12/02/2019 18:02:57.463 INFO  (ConditionEvaluationReportLoggingListener.java:142) 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+12/02/2019 18:02:57.468 ERROR (SpringApplication.java:858) Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at br.com.teste.poc.setup.TestePocApplication.main(TestePocApplication.java:27) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:634) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:347) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:466) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+12/02/2019 18:04:09.869 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12/02/2019 18:04:09.878 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12/02/2019 18:04:10.969 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+12/02/2019 18:04:11.066 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 92ms. Found 4 repository interfaces.
+12/02/2019 18:04:11.532 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c2edaa8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12/02/2019 18:04:11.850 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+12/02/2019 18:04:11.864 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+12/02/2019 18:04:11.875 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+12/02/2019 18:04:11.876 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+12/02/2019 18:04:11.883 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+12/02/2019 18:04:11.995 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+12/02/2019 18:04:11.995 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 2116 ms
+12/02/2019 18:04:12.132 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+12/02/2019 18:04:12.300 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+12/02/2019 18:04:12.483 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+12/02/2019 18:04:12.552 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+12/02/2019 18:04:12.554 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+12/02/2019 18:04:12.676 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+12/02/2019 18:04:12.814 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+12/02/2019 18:04:12.827 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+12/02/2019 18:04:12.833 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@65b7b462
+12/02/2019 18:04:12.980 WARN  (AbstractApplicationContext.java:554) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+12/02/2019 18:04:12.981 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+12/02/2019 18:04:13.074 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+12/02/2019 18:04:13.076 INFO  (DirectJDKLog.java:173) Stopping service [Tomcat]
+12/02/2019 18:04:13.087 INFO  (ConditionEvaluationReportLoggingListener.java:142) 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+12/02/2019 18:04:13.094 ERROR (SpringApplication.java:858) Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at br.com.teste.poc.setup.TestePocApplication.main(TestePocApplication.java:27) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:634) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:347) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:466) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+13/02/2019 10:55:52.261 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13/02/2019 10:55:52.273 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13/02/2019 10:55:54.853 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+13/02/2019 10:55:54.953 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 93ms. Found 4 repository interfaces.
+13/02/2019 10:55:55.420 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e6f8096] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13/02/2019 10:55:55.858 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+13/02/2019 10:55:55.872 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+13/02/2019 10:55:55.882 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+13/02/2019 10:55:55.883 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+13/02/2019 10:55:55.893 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+13/02/2019 10:55:56.017 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+13/02/2019 10:55:56.018 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 3744 ms
+13/02/2019 10:55:56.191 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+13/02/2019 10:55:56.654 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+13/02/2019 10:55:56.821 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13/02/2019 10:55:56.923 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+13/02/2019 10:55:56.925 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+13/02/2019 10:55:57.103 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+13/02/2019 10:55:57.291 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+13/02/2019 10:55:57.307 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+13/02/2019 10:55:57.317 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@da5a05
+13/02/2019 10:55:57.459 WARN  (AbstractApplicationContext.java:554) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+13/02/2019 10:55:57.460 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+13/02/2019 10:55:57.541 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+13/02/2019 10:55:57.543 INFO  (DirectJDKLog.java:173) Stopping service [Tomcat]
+13/02/2019 10:55:57.554 INFO  (ConditionEvaluationReportLoggingListener.java:142) 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13/02/2019 10:55:57.564 ERROR (SpringApplication.java:858) Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at br.com.teste.poc.setup.TestePocApplication.main(TestePocApplication.java:27) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:402) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: br.com.teste.poc.domain.pessoa.Pessoa column: id_cidade (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:862) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:880) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:902) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:634) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:347) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:466) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+13/02/2019 10:57:13.475 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13/02/2019 10:57:13.482 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13/02/2019 10:57:14.636 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+13/02/2019 10:57:14.726 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 85ms. Found 4 repository interfaces.
+13/02/2019 10:57:15.263 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e6f8096] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13/02/2019 10:57:15.568 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+13/02/2019 10:57:15.581 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+13/02/2019 10:57:15.591 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+13/02/2019 10:57:15.592 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+13/02/2019 10:57:15.599 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+13/02/2019 10:57:15.724 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+13/02/2019 10:57:15.724 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 2241 ms
+13/02/2019 10:57:15.857 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+13/02/2019 10:57:15.965 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+13/02/2019 10:57:16.174 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13/02/2019 10:57:16.238 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+13/02/2019 10:57:16.240 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+13/02/2019 10:57:16.354 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+13/02/2019 10:57:16.497 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+13/02/2019 10:57:16.529 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+13/02/2019 10:57:16.537 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@da5a05
+13/02/2019 10:57:17.162 INFO  (AbstractEntityManagerFactoryBean.java:415) Initialized JPA EntityManagerFactory for persistence unit 'default'
+13/02/2019 10:57:18.053 INFO  (OptionalLiveReloadServer.java:57) LiveReload server is running on port 35729
+13/02/2019 10:57:18.114 INFO  (PropertySourcedRequestMappingHandlerMapping.java:69) Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+13/02/2019 10:57:18.177 WARN  (JpaBaseConfiguration.java:234) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13/02/2019 10:57:18.438 INFO  (DocumentationPluginsBootstrapper.java:160) Context refreshed
+13/02/2019 10:57:18.458 INFO  (DocumentationPluginsBootstrapper.java:163) Found 1 custom documentation plugin(s)
+13/02/2019 10:57:18.520 INFO  (ApiListingReferenceScanner.java:41) Scanning for api listing references
+13/02/2019 10:57:18.711 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_1
+13/02/2019 10:57:18.727 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_1
+13/02/2019 10:57:18.747 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_1
+13/02/2019 10:57:18.753 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_1
+13/02/2019 10:57:18.757 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_2
+13/02/2019 10:57:18.762 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_2
+13/02/2019 10:57:18.776 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_2
+13/02/2019 10:57:18.780 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_2
+13/02/2019 10:57:18.880 INFO  (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8080"]
+13/02/2019 10:57:18.908 INFO  (TomcatWebServer.java:204) Tomcat started on port(s): 8080 (http) with context path ''
+13/02/2019 10:57:26.932 INFO  (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+13/02/2019 10:57:26.946 INFO  (FrameworkServlet.java:524) Initializing Servlet 'dispatcherServlet'
+13/02/2019 10:57:26.957 INFO  (FrameworkServlet.java:546) Completed initialization in 10 ms
+13/02/2019 10:57:27.573 WARN  (DispatcherServlet.java:1248) No mapping for GET /
+13/02/2019 10:57:27.643 WARN  (DispatcherServlet.java:1248) No mapping for GET /csrf
+13/02/2019 10:58:27.733 INFO  (QueryTranslatorFactoryInitiator.java:47) HHH000397: Using ASTQueryTranslatorFactory
+13/02/2019 10:58:40.634 INFO  (SpringApplicationAdminMXBeanRegistrar.java:164) Application shutdown requested.
+13/02/2019 10:58:40.643 INFO  (AbstractEntityManagerFactoryBean.java:597) Closing JPA EntityManagerFactory for persistence unit 'default'
+13/02/2019 10:58:40.647 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+13/02/2019 10:58:40.655 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+13/02/2019 15:37:14.132 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13/02/2019 15:37:14.140 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13/02/2019 15:37:15.617 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+13/02/2019 15:37:15.720 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 98ms. Found 4 repository interfaces.
+13/02/2019 15:37:16.247 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73803fad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13/02/2019 15:37:16.725 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+13/02/2019 15:37:16.740 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+13/02/2019 15:37:16.752 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+13/02/2019 15:37:16.753 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+13/02/2019 15:37:16.763 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+13/02/2019 15:37:16.896 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+13/02/2019 15:37:16.896 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 2755 ms
+13/02/2019 15:37:17.061 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+13/02/2019 15:37:17.321 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+13/02/2019 15:37:17.497 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13/02/2019 15:37:17.586 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+13/02/2019 15:37:17.587 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+13/02/2019 15:37:17.737 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+13/02/2019 15:37:17.905 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+13/02/2019 15:37:17.923 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+13/02/2019 15:37:17.928 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@332182c3
+13/02/2019 15:37:18.022 WARN  (AbstractApplicationContext.java:554) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Column(s) not allowed on a @OneToOne property: br.com.teste.poc.domain.pessoa.Pessoa.id_cidade
+13/02/2019 15:37:18.023 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+13/02/2019 15:37:18.116 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+13/02/2019 15:37:18.118 INFO  (DirectJDKLog.java:173) Stopping service [Tomcat]
+13/02/2019 15:37:18.138 INFO  (ConditionEvaluationReportLoggingListener.java:142) 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13/02/2019 15:37:18.153 ERROR (SpringApplication.java:858) Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Column(s) not allowed on a @OneToOne property: br.com.teste.poc.domain.pessoa.Pessoa.id_cidade
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at br.com.teste.poc.setup.TestePocApplication.main(TestePocApplication.java:27) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: org.hibernate.AnnotationException: @Column(s) not allowed on a @OneToOne property: br.com.teste.poc.domain.pessoa.Pessoa.id_cidade
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:1787) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:972) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:799) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+13/02/2019 15:38:16.277 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13/02/2019 15:38:16.283 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13/02/2019 15:38:17.333 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+13/02/2019 15:38:17.423 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 85ms. Found 4 repository interfaces.
+13/02/2019 15:38:17.863 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78f9e352] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13/02/2019 15:38:18.162 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+13/02/2019 15:38:18.175 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+13/02/2019 15:38:18.185 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+13/02/2019 15:38:18.186 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+13/02/2019 15:38:18.193 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+13/02/2019 15:38:18.295 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+13/02/2019 15:38:18.296 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 2012 ms
+13/02/2019 15:38:18.426 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+13/02/2019 15:38:18.562 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+13/02/2019 15:38:18.732 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13/02/2019 15:38:18.783 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+13/02/2019 15:38:18.785 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+13/02/2019 15:38:18.892 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+13/02/2019 15:38:19.034 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+13/02/2019 15:38:19.049 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+13/02/2019 15:38:19.056 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2620dbd1
+13/02/2019 15:38:19.137 WARN  (AbstractApplicationContext.java:554) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Column(s) not allowed on a @OneToOne property: br.com.teste.poc.domain.pessoa.Pessoa.id_cidade
+13/02/2019 15:38:19.138 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+13/02/2019 15:38:19.239 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+13/02/2019 15:38:19.241 INFO  (DirectJDKLog.java:173) Stopping service [Tomcat]
+13/02/2019 15:38:19.251 INFO  (ConditionEvaluationReportLoggingListener.java:142) 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13/02/2019 15:38:19.255 ERROR (SpringApplication.java:858) Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @Column(s) not allowed on a @OneToOne property: br.com.teste.poc.domain.pessoa.Pessoa.id_cidade
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at br.com.teste.poc.setup.TestePocApplication.main(TestePocApplication.java:27) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: org.hibernate.AnnotationException: @Column(s) not allowed on a @OneToOne property: br.com.teste.poc.domain.pessoa.Pessoa.id_cidade
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:1787) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:972) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:799) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+13/02/2019 15:44:49.681 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13/02/2019 15:44:49.688 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13/02/2019 15:44:51.088 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+13/02/2019 15:44:51.183 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 89ms. Found 4 repository interfaces.
+13/02/2019 15:44:51.806 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d2d3308] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13/02/2019 15:44:52.223 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+13/02/2019 15:44:52.238 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+13/02/2019 15:44:52.253 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+13/02/2019 15:44:52.254 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+13/02/2019 15:44:52.265 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+13/02/2019 15:44:52.392 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+13/02/2019 15:44:52.392 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 2703 ms
+13/02/2019 15:44:52.523 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+13/02/2019 15:44:52.623 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+13/02/2019 15:44:52.824 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13/02/2019 15:44:52.915 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+13/02/2019 15:44:52.916 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+13/02/2019 15:44:53.055 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+13/02/2019 15:44:53.215 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+13/02/2019 15:44:53.232 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+13/02/2019 15:44:53.237 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3d586758
+13/02/2019 15:44:53.390 WARN  (AbstractApplicationContext.java:554) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Unable to find column with logical name: id_cidade in org.hibernate.mapping.Table(cidade) and its related supertables and secondary tables
+13/02/2019 15:44:53.392 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+13/02/2019 15:44:53.403 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+13/02/2019 15:44:53.406 INFO  (DirectJDKLog.java:173) Stopping service [Tomcat]
+13/02/2019 15:44:53.421 INFO  (ConditionEvaluationReportLoggingListener.java:142) 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13/02/2019 15:44:53.426 ERROR (SpringApplication.java:858) Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Unable to find column with logical name: id_cidade in org.hibernate.mapping.Table(cidade) and its related supertables and secondary tables
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at br.com.teste.poc.setup.TestePocApplication.main(TestePocApplication.java:27) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: org.hibernate.MappingException: Unable to find column with logical name: id_cidade in org.hibernate.mapping.Table(cidade) and its related supertables and secondary tables
+	at org.hibernate.cfg.Ejb3JoinColumn.checkReferencedColumnsType(Ejb3JoinColumn.java:832) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.cfg.BinderHelper.createSyntheticPropertyReference(BinderHelper.java:256) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:101) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+13/02/2019 15:52:02.083 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13/02/2019 15:52:02.092 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13/02/2019 15:52:03.196 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+13/02/2019 15:52:03.289 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 87ms. Found 4 repository interfaces.
+13/02/2019 15:52:03.750 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2d3b2c0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13/02/2019 15:52:04.066 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+13/02/2019 15:52:04.079 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+13/02/2019 15:52:04.089 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+13/02/2019 15:52:04.090 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+13/02/2019 15:52:04.097 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+13/02/2019 15:52:04.206 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+13/02/2019 15:52:04.207 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 2114 ms
+13/02/2019 15:52:04.363 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+13/02/2019 15:52:04.487 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+13/02/2019 15:52:04.678 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13/02/2019 15:52:04.731 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+13/02/2019 15:52:04.737 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+13/02/2019 15:52:04.871 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+13/02/2019 15:52:05.033 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+13/02/2019 15:52:05.053 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+13/02/2019 15:52:05.059 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5853eadb
+13/02/2019 15:52:05.179 WARN  (AbstractApplicationContext.java:554) Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Unable to find column with logical name: id_cidade in org.hibernate.mapping.Table(cidade) and its related supertables and secondary tables
+13/02/2019 15:52:05.181 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+13/02/2019 15:52:05.262 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+13/02/2019 15:52:05.265 INFO  (DirectJDKLog.java:173) Stopping service [Tomcat]
+13/02/2019 15:52:05.276 INFO  (ConditionEvaluationReportLoggingListener.java:142) 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13/02/2019 15:52:05.282 ERROR (SpringApplication.java:858) Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.MappingException: Unable to find column with logical name: id_cidade in org.hibernate.mapping.Table(cidade) and its related supertables and secondary tables
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at br.com.teste.poc.setup.TestePocApplication.main(TestePocApplication.java:27) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: org.hibernate.MappingException: Unable to find column with logical name: id_cidade in org.hibernate.mapping.Table(cidade) and its related supertables and secondary tables
+	at org.hibernate.cfg.Ejb3JoinColumn.checkReferencedColumnsType(Ejb3JoinColumn.java:832) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.cfg.BinderHelper.createSyntheticPropertyReference(BinderHelper.java:256) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:101) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1827) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1771) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1658) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.7.Final.jar:5.3.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 21 more
+13/02/2019 15:52:25.080 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13/02/2019 15:52:25.087 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13/02/2019 15:52:26.144 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+13/02/2019 15:52:26.234 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 84ms. Found 4 repository interfaces.
+13/02/2019 15:52:26.680 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$95038ad0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13/02/2019 15:52:26.991 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+13/02/2019 15:52:27.004 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+13/02/2019 15:52:27.015 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+13/02/2019 15:52:27.016 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+13/02/2019 15:52:27.023 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+13/02/2019 15:52:27.128 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+13/02/2019 15:52:27.129 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 2041 ms
+13/02/2019 15:52:27.265 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+13/02/2019 15:52:27.407 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+13/02/2019 15:52:27.588 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13/02/2019 15:52:27.639 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+13/02/2019 15:52:27.641 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+13/02/2019 15:52:27.759 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+13/02/2019 15:52:27.903 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+13/02/2019 15:52:27.920 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+13/02/2019 15:52:27.927 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@194c6aa0
+13/02/2019 15:52:28.494 INFO  (AbstractEntityManagerFactoryBean.java:415) Initialized JPA EntityManagerFactory for persistence unit 'default'
+13/02/2019 15:52:29.445 INFO  (OptionalLiveReloadServer.java:57) LiveReload server is running on port 35729
+13/02/2019 15:52:29.493 INFO  (PropertySourcedRequestMappingHandlerMapping.java:69) Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+13/02/2019 15:52:29.550 WARN  (JpaBaseConfiguration.java:234) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13/02/2019 15:52:29.881 INFO  (DocumentationPluginsBootstrapper.java:160) Context refreshed
+13/02/2019 15:52:29.899 INFO  (DocumentationPluginsBootstrapper.java:163) Found 1 custom documentation plugin(s)
+13/02/2019 15:52:29.949 INFO  (ApiListingReferenceScanner.java:41) Scanning for api listing references
+13/02/2019 15:52:30.112 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_1
+13/02/2019 15:52:30.120 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_1
+13/02/2019 15:52:30.136 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_1
+13/02/2019 15:52:30.144 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_1
+13/02/2019 15:52:30.147 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_2
+13/02/2019 15:52:30.152 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_2
+13/02/2019 15:52:30.162 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_2
+13/02/2019 15:52:30.166 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_2
+13/02/2019 15:52:30.197 INFO  (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8080"]
+13/02/2019 15:52:30.231 INFO  (TomcatWebServer.java:204) Tomcat started on port(s): 8080 (http) with context path ''
+13/02/2019 15:52:34.780 INFO  (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+13/02/2019 15:52:34.781 INFO  (FrameworkServlet.java:524) Initializing Servlet 'dispatcherServlet'
+13/02/2019 15:52:34.790 INFO  (FrameworkServlet.java:546) Completed initialization in 9 ms
+13/02/2019 15:52:35.339 WARN  (DispatcherServlet.java:1248) No mapping for GET /
+13/02/2019 15:52:35.374 WARN  (DispatcherServlet.java:1248) No mapping for GET /csrf
+13/02/2019 15:54:47.796 INFO  (QueryTranslatorFactoryInitiator.java:47) HHH000397: Using ASTQueryTranslatorFactory
+13/02/2019 16:44:33.398 INFO  (AbstractEntityManagerFactoryBean.java:597) Closing JPA EntityManagerFactory for persistence unit 'default'
+13/02/2019 16:44:33.401 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+13/02/2019 16:44:33.409 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.
+13/02/2019 16:44:34.819 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+13/02/2019 16:44:34.871 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 50ms. Found 4 repository interfaces.
+13/02/2019 16:44:35.017 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$95038ad0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13/02/2019 16:44:35.121 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+13/02/2019 16:44:35.122 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+13/02/2019 16:44:35.123 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+13/02/2019 16:44:35.123 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+13/02/2019 16:44:35.154 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+13/02/2019 16:44:35.154 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 1462 ms
+13/02/2019 16:44:35.218 INFO  (HikariDataSource.java:110) HikariPool-2 - Starting...
+13/02/2019 16:44:35.319 INFO  (HikariDataSource.java:123) HikariPool-2 - Start completed.
+13/02/2019 16:44:35.430 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13/02/2019 16:44:35.458 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+13/02/2019 16:44:35.459 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+13/02/2019 16:44:35.459 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@194c6aa0
+13/02/2019 16:44:35.537 INFO  (AbstractEntityManagerFactoryBean.java:415) Initialized JPA EntityManagerFactory for persistence unit 'default'
+13/02/2019 16:44:35.988 INFO  (OptionalLiveReloadServer.java:57) LiveReload server is running on port 35729
+13/02/2019 16:44:36.036 INFO  (PropertySourcedRequestMappingHandlerMapping.java:69) Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+13/02/2019 16:44:36.088 WARN  (JpaBaseConfiguration.java:234) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13/02/2019 16:44:36.269 INFO  (DocumentationPluginsBootstrapper.java:160) Context refreshed
+13/02/2019 16:44:36.270 INFO  (DocumentationPluginsBootstrapper.java:163) Found 1 custom documentation plugin(s)
+13/02/2019 16:44:36.281 INFO  (ApiListingReferenceScanner.java:41) Scanning for api listing references
+13/02/2019 16:44:36.322 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_1
+13/02/2019 16:44:36.329 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_1
+13/02/2019 16:44:36.340 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_1
+13/02/2019 16:44:36.349 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_1
+13/02/2019 16:44:36.352 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_2
+13/02/2019 16:44:36.356 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_2
+13/02/2019 16:44:36.363 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_2
+13/02/2019 16:44:36.365 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_2
+13/02/2019 16:44:36.383 INFO  (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8080"]
+13/02/2019 16:44:36.386 INFO  (TomcatWebServer.java:204) Tomcat started on port(s): 8080 (http) with context path ''
+13/02/2019 16:44:36.390 INFO  (ConditionEvaluationDeltaLoggingListener.java:56) Condition evaluation unchanged
+13/02/2019 16:45:16.821 INFO  (AbstractEntityManagerFactoryBean.java:597) Closing JPA EntityManagerFactory for persistence unit 'default'
+13/02/2019 16:45:16.823 INFO  (HikariDataSource.java:350) HikariPool-2 - Shutdown initiated...
+13/02/2019 16:45:16.831 INFO  (HikariDataSource.java:352) HikariPool-2 - Shutdown completed.
+13/02/2019 16:45:17.660 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+13/02/2019 16:45:17.710 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 49ms. Found 4 repository interfaces.
+13/02/2019 16:45:17.828 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$95038ad0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13/02/2019 16:45:17.899 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+13/02/2019 16:45:17.901 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+13/02/2019 16:45:17.901 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+13/02/2019 16:45:17.902 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+13/02/2019 16:45:17.926 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+13/02/2019 16:45:17.926 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 802 ms
+13/02/2019 16:45:18.005 INFO  (HikariDataSource.java:110) HikariPool-3 - Starting...
+13/02/2019 16:45:18.055 INFO  (HikariDataSource.java:123) HikariPool-3 - Start completed.
+13/02/2019 16:45:18.193 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13/02/2019 16:45:18.234 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+13/02/2019 16:45:18.235 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+13/02/2019 16:45:18.235 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@194c6aa0
+13/02/2019 16:45:18.341 INFO  (AbstractEntityManagerFactoryBean.java:415) Initialized JPA EntityManagerFactory for persistence unit 'default'
+14/02/2019 15:28:21.957 INFO  (DeferredLog.java:227) Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14/02/2019 15:28:21.967 INFO  (DeferredLog.java:227) For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14/02/2019 15:28:23.754 INFO  (RepositoryConfigurationDelegate.java:126) Bootstrapping Spring Data repositories in DEFAULT mode.
+14/02/2019 15:28:23.880 INFO  (RepositoryConfigurationDelegate.java:182) Finished Spring Data repository scanning in 118ms. Found 5 repository interfaces.
+14/02/2019 15:28:24.511 INFO  (PostProcessorRegistrationDelegate.java:330) Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e28795de] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14/02/2019 15:28:24.984 INFO  (TomcatWebServer.java:90) Tomcat initialized with port(s): 8080 (http)
+14/02/2019 15:28:25.015 INFO  (DirectJDKLog.java:173) Initializing ProtocolHandler ["http-nio-8080"]
+14/02/2019 15:28:25.028 INFO  (DirectJDKLog.java:173) Starting service [Tomcat]
+14/02/2019 15:28:25.029 INFO  (DirectJDKLog.java:173) Starting Servlet engine: [Apache Tomcat/9.0.14]
+14/02/2019 15:28:25.040 INFO  (DirectJDKLog.java:173) The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin/server;C:/Users/Denis M. Ladeira/Documents/NEXUS/ferramentas/JDK/jdk-11.0.1/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\Scripts;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\JDK\jdk-11.0.1\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\ProgramData\chocolatey\bin;C:\Python27;C:\Users\Denis M. Ladeira\Documents\alura\cursomongodb\mongodb-win32-x86_64-2008plus-ssl-4.0.3\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\Denis M. Ladeira\Documents\NEXUS\ferramentas\apache-maven-3.6.0\bin;C:\Users\Denis M. Ladeira\.windows-build-tools\python27\;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm\node_modules\.bin;C:\Program Files (x86)\Gupta\Team Developer 2005.1;C:\Program_Files\product\11.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Arquivos de Programas\MySQL\MySQL Server 5.7\bin;C:\Users\Denis M. Ladeira\AppData\Local\Microsoft\WindowsApps;C:\Users\Denis M. Ladeira\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Denis M. Ladeira\AppData\Local\Yarn\bin;C:\Users\Denis M. Ladeira\AppData\Roaming\npm;;C:\Users\Denis M. Ladeira\Desktop;;.]
+14/02/2019 15:28:25.185 INFO  (DirectJDKLog.java:173) Initializing Spring embedded WebApplicationContext
+14/02/2019 15:28:25.186 INFO  (ServletWebServerApplicationContext.java:296) Root WebApplicationContext: initialization completed in 3218 ms
+14/02/2019 15:28:25.448 INFO  (HikariDataSource.java:110) HikariPool-1 - Starting...
+14/02/2019 15:28:25.718 INFO  (HikariDataSource.java:123) HikariPool-1 - Start completed.
+14/02/2019 15:28:25.935 INFO  (LogHelper.java:31) HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+14/02/2019 15:28:26.030 INFO  (Version.java:46) HHH000412: Hibernate Core {5.3.7.Final}
+14/02/2019 15:28:26.032 INFO  (Environment.java:213) HHH000206: hibernate.properties not found
+14/02/2019 15:28:26.221 INFO  (JavaReflectionManager.java:49) HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+14/02/2019 15:28:26.416 INFO  (Dialect.java:157) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+14/02/2019 15:28:26.436 INFO  (LobCreatorBuilderImpl.java:63) HHH000422: Disabling contextual LOB creation as connection was null
+14/02/2019 15:28:26.449 INFO  (BasicTypeRegistry.java:159) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4eebfa70
+14/02/2019 15:28:27.182 INFO  (AbstractEntityManagerFactoryBean.java:415) Initialized JPA EntityManagerFactory for persistence unit 'default'
+14/02/2019 15:28:28.268 INFO  (OptionalLiveReloadServer.java:57) LiveReload server is running on port 35729
+14/02/2019 15:28:28.326 INFO  (PropertySourcedRequestMappingHandlerMapping.java:69) Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14/02/2019 15:28:28.392 WARN  (JpaBaseConfiguration.java:234) spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14/02/2019 15:28:28.638 INFO  (DocumentationPluginsBootstrapper.java:160) Context refreshed
+14/02/2019 15:28:28.665 INFO  (DocumentationPluginsBootstrapper.java:163) Found 1 custom documentation plugin(s)
+14/02/2019 15:28:28.723 INFO  (ApiListingReferenceScanner.java:41) Scanning for api listing references
+14/02/2019 15:28:28.891 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_1
+14/02/2019 15:28:28.900 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_1
+14/02/2019 15:28:28.919 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_1
+14/02/2019 15:28:28.933 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_1
+14/02/2019 15:28:28.937 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_2
+14/02/2019 15:28:28.950 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_2
+14/02/2019 15:28:28.962 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_2
+14/02/2019 15:28:28.966 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_2
+14/02/2019 15:28:28.987 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: excluirUsingDELETE_3
+14/02/2019 15:28:28.991 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: inserirUsingPOST_3
+14/02/2019 15:28:29.018 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: selecionarTodosUsingGET_3
+14/02/2019 15:28:29.023 INFO  (CachingOperationNameGenerator.java:40) Generating unique operation named: updateUsingPUT_3
+14/02/2019 15:28:29.046 INFO  (DirectJDKLog.java:173) Starting ProtocolHandler ["http-nio-8080"]
+14/02/2019 15:28:29.085 INFO  (TomcatWebServer.java:204) Tomcat started on port(s): 8080 (http) with context path ''
+14/02/2019 15:28:38.454 INFO  (DirectJDKLog.java:173) Initializing Spring DispatcherServlet 'dispatcherServlet'
+14/02/2019 15:28:38.455 INFO  (FrameworkServlet.java:524) Initializing Servlet 'dispatcherServlet'
+14/02/2019 15:28:38.469 INFO  (FrameworkServlet.java:546) Completed initialization in 14 ms
+14/02/2019 15:28:39.153 WARN  (DispatcherServlet.java:1248) No mapping for GET /
+14/02/2019 15:28:39.201 WARN  (DispatcherServlet.java:1248) No mapping for GET /csrf
+14/02/2019 15:28:46.323 INFO  (QueryTranslatorFactoryInitiator.java:47) HHH000397: Using ASTQueryTranslatorFactory
+14/02/2019 15:37:26.295 INFO  (SpringApplicationAdminMXBeanRegistrar.java:164) Application shutdown requested.
+14/02/2019 15:37:26.305 INFO  (AbstractEntityManagerFactoryBean.java:597) Closing JPA EntityManagerFactory for persistence unit 'default'
+14/02/2019 15:37:26.309 INFO  (HikariDataSource.java:350) HikariPool-1 - Shutdown initiated...
+14/02/2019 15:37:26.320 INFO  (HikariDataSource.java:352) HikariPool-1 - Shutdown completed.

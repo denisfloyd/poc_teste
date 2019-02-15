@@ -3,8 +3,6 @@ package br.com.teste.poc.app.pessoa.dto;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.teste.poc.domain.cidade.Cidade;
-import br.com.teste.poc.domain.cidade.service.CidadeService;
 import br.com.teste.poc.domain.pessoa.Pessoa;
 import br.eti.nexus.kernel.application.dto.annotation.Attribute;
 import br.eti.nexus.kernel.application.dto.request.CollectionRequestDTO;
@@ -20,13 +18,11 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
-public class PessoaDTO extends SingleResponseDTO  {
+public class PessoaDTOInserir extends SingleResponseDTO  {
 
 	@Getter(AccessLevel.NONE)
 	@Setter(AccessLevel.NONE)
 	private static final long serialVersionUID = 3238541579718107040L;
-	
-	CidadeService cService = new CidadeService();
 
 	@Attribute(field="id")
 	private String id;
@@ -41,10 +37,10 @@ public class PessoaDTO extends SingleResponseDTO  {
 	private String birth;
 
 	@Attribute(field="id_cidade")
-	private Cidade city;
+	private String cityId;
 	
 
-	public PessoaDTO(Pessoa p, CollectionRequestDTO request) {
+	public PessoaDTOInserir(Pessoa p, CollectionRequestDTO request) {
 		super();
 		
 		List<String> attributes = request != null ? request.getAttributes() : new ArrayList<>();
@@ -65,10 +61,8 @@ public class PessoaDTO extends SingleResponseDTO  {
         	this.birth = p.getNascimento() != null ? new DateUtil().formatDateTime(p.getNascimento()) : null;
         }
 		
-		//Cidade c = cService.buscarPorID(attributes.contains("id_cidade"));
-		
 		if (attributes.isEmpty() || attributes.contains("cidade")) {
-        	this.city = p.getCidade();
+        	this.cityId = p.getCidade().getId();
         }
 		
 	}

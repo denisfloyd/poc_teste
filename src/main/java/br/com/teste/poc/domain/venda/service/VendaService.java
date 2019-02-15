@@ -1,16 +1,15 @@
-package br.com.teste.poc.domain.produto.service;
+package br.com.teste.poc.domain.venda.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.teste.poc.domain.produto.Produto;
-import br.com.teste.poc.domain.produto.repository.IProdutoRepository;
-import br.com.teste.poc.domain.produto.validator.ProdutoPossuiCodigo;
-import br.com.teste.poc.domain.produto.validator.ProdutoPossuiDesc;
-import br.com.teste.poc.domain.produto.validator.ValidarCodigoProduto;
-import br.com.teste.poc.domain.produto.validator.ValidarIDProduto;
+import br.com.teste.poc.domain.venda.Venda;
+import br.com.teste.poc.domain.venda.repository.IVendaRepository;
+import br.com.teste.poc.domain.venda.validator.ValidarCodigoVenda;
+import br.com.teste.poc.domain.venda.validator.ValidarIDVenda;
+import br.com.teste.poc.domain.venda.validator.VendaPossuiCodigo;
 import br.eti.nexus.kernel.domain.validator.ValidadorDefault;
 import br.eti.nexus.kernel.exception.NexusException;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.model.PageModel;
@@ -24,19 +23,16 @@ import lombok.extern.log4j.Log4j2;
 
 @Log4j2
 @Service
-public class ProdutoService extends ValidadorDefault<Produto> implements IProdutoService {
+public class VendaService extends ValidadorDefault<Venda> implements IVendaService {
 	
 	@Autowired
-	private ProdutoPossuiCodigo possuiCodigo;
+	private VendaPossuiCodigo possuiCodigo;
 	
 	@Autowired
-	private ProdutoPossuiDesc possuiDesc;
-	
-	@Autowired
-	private ValidarCodigoProduto validarCodigo;
+	private ValidarCodigoVenda validarCodigo;
 
 	@Autowired
-	private ValidarIDProduto validarIDProduto;
+	private ValidarIDVenda validarIDVenda;
 
 	@Autowired
 	private ErrorMessageStack errorStack;
@@ -45,13 +41,13 @@ public class ProdutoService extends ValidadorDefault<Produto> implements IProdut
 	private MessageStack messageStack;
 
 	@Autowired
-	private IProdutoRepository repository;
+	private IVendaRepository repository;
 
 	@Autowired
-	private RequisitionUtil<Produto> requisition;
+	private RequisitionUtil<Venda> requisition;
 
 	@Override
-	protected void validations(Produto handler) {
+	protected void validations(Venda handler) {
 
 		log.debug(" PessoaService.validations() ");
 		log.debug(" Pessoa: " + handler);
@@ -62,12 +58,6 @@ public class ProdutoService extends ValidadorDefault<Produto> implements IProdut
 			errorStack.addMessage("codigo_vazio");
 		}
 
-		// VALIDAR NOME DE PESSOA
-		if (!possuiDesc.isValid(handler)) {
-			log.error("Descrição nula ou vazio.");
-			errorStack.addMessage("nome_vazio");
-		}
-
 		// VALIDAR DUPLICAÇÃO DE CÓDIGO
 		if (!validarCodigo.isValid(handler)) {
 			log.error("Código já existe");
@@ -76,13 +66,13 @@ public class ProdutoService extends ValidadorDefault<Produto> implements IProdut
 	}
 
 	@Override
-	public Produto inserir(Produto p) throws NexusException {
+	public Venda inserir(Venda v) throws NexusException {
 
-		log.debug(" ProdutoService.inserir() ");
-		log.debug(" Produto: " + p);
+		log.debug(" VendaService.inserir() ");
+		log.debug(" Venda: " + v);
 
 		// EXECUÇÃO DAS VALIDAÇÕES.
-		validations(p);
+		validations(v);
 
 		// VERIFICAR SE POSSUI ERROS
 		if (errorStack.isError()) {
@@ -95,16 +85,16 @@ public class ProdutoService extends ValidadorDefault<Produto> implements IProdut
 		}
 
 		// GERAÇÃO DE ID
-		p.setId(NexusUUID.generateID());
+		v.setId(NexusUUID.generateID());
 
 		try {
 
-			// SALVAR PRODUTO
-			repository.salvar(p);
+			// SALVAR Venda
+			repository.salvar(v);
 
 			// GERAR MENSAGEM DE SUCESSO
 			messageStack.addMessage(TypeMessage.success, "registro_salvo_com_sucesso");
-			log.debug("Sucesso ao salvar pessoa: " + p);
+			log.debug("Sucesso ao salvar venda: " + v);
 
 		} catch (Exception e) {
 			log.error("Erro ao salvar Pessoa: " + e.getMessage());
@@ -115,16 +105,16 @@ public class ProdutoService extends ValidadorDefault<Produto> implements IProdut
 			throw NexusException.of(error);
 		}
 
-		return p;
+		return v;
 	}
 
 	@Override
-	public Produto atualizar(String id, Produto p) throws NexusException {
+	public Venda atualizar(String id, Venda v) throws NexusException {
 
-		log.debug(" ProdutoService.inserir() ");
-		log.debug(" Produto: " + p);
+		log.debug(" VendaService.inserir() ");
+		log.debug(" Venda: " + v);
 
-		if (!validarIDProduto.isValid(id)) {
+		if (!validarIDVenda.isValid(id)) {
 			log.debug("Registro inválido.");
 			errorStack.addMessage("registro_invalido");
 
@@ -135,10 +125,10 @@ public class ProdutoService extends ValidadorDefault<Produto> implements IProdut
 			throw NexusException.of(error);
 		}
 
-		p.setId(id);
+		v.setId(id);
 
 		// EXECUÇÃO DAS VALIDAÇÕES.
-		validations(p);
+		validations(v);
 
 		// VERIFICAR SE POSSUI ERROS
 		if (errorStack.isError()) {
@@ -153,11 +143,11 @@ public class ProdutoService extends ValidadorDefault<Produto> implements IProdut
 		try {
 
 			// SALVAR PESSOA
-			repository.atualizar(p);
+			repository.atualizar(v);
 
 			// GERAR MENSAGEM DE SUCESSO
 			messageStack.addMessage(TypeMessage.success, "registro_alterado_com_sucesso");
-			log.debug("Sucesso ao salvar pessoa: " + p);
+			log.debug("Sucesso ao salvar venda: " + v);
 
 		} catch (Exception e) {
 			log.error("Erro ao salvar Pessoa: " + e.getMessage());
@@ -169,28 +159,28 @@ public class ProdutoService extends ValidadorDefault<Produto> implements IProdut
 			throw NexusException.of(error);
 		}
 
-		return p;
+		return v;
 
 	}
 
 	@Override
-	public PageModel<Produto> selecionarTodos() throws NexusException {
+	public PageModel<Venda> selecionarTodos() throws NexusException {
 
 		log.debug(" PessoaService.selecionarTodos() ");
 
-		List<Produto> produtos = repository.selecionarTodos();
+		List<Venda> Vendas = repository.selecionarTodos();
 		Boolean hasNext = requisition.getHasNext();
 
-		return new PageModel<>(produtos, hasNext);
+		return new PageModel<>(Vendas, hasNext);
 	}
 
 	@Override
 	public void excluir(String id) throws NexusException {
 
-		log.debug(" PessoaService.excluir() ");
+		log.debug(" VendaService.excluir() ");
 		log.debug(" ID: " + id);
 
-		if (!validarIDProduto.isValid(id)) {
+		if (!validarIDVenda.isValid(id)) {
 			log.debug("Registro inválido.");
 			errorStack.addMessage("registro_invalido");
 
@@ -201,11 +191,11 @@ public class ProdutoService extends ValidadorDefault<Produto> implements IProdut
 			throw NexusException.of(error);
 		}
 
-		repository.excluirProduto(id);
+		repository.excluirVenda(id);
 		
 		// GERAR MENSAGEM DE SUCESSO
 		messageStack.addMessage(TypeMessage.success, "registro_excluido_com_sucesso");
-		log.debug("Sucesso ao excluir produto com ID: " + id);
+		log.debug("Sucesso ao excluir Venda com ID: " + id);
 	}
 
 }

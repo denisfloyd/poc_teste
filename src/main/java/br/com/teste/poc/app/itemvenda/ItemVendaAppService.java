@@ -1,5 +1,6 @@
-package br.com.teste.poc.app.pessoa;
+package br.com.teste.poc.app.itemvenda;
 
+import java.math.BigDecimal;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,12 +9,10 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.teste.poc.app.pessoa.converter.PessoaConverter;
-import br.com.teste.poc.app.pessoa.converter.PessoaConverterInsert;
-import br.com.teste.poc.app.pessoa.dto.PessoaDTO;
-import br.com.teste.poc.app.pessoa.dto.PessoaDTOInserir;
-import br.com.teste.poc.domain.pessoa.Pessoa;
-import br.com.teste.poc.domain.pessoa.service.PessoaService;
+import br.com.teste.poc.app.itemvenda.converter.ItemVendaConverter;
+import br.com.teste.poc.app.itemvenda.dto.ItemVendaDTO;
+import br.com.teste.poc.domain.itemvenda.ItemVenda;
+import br.com.teste.poc.domain.itemvenda.service.ItemVendaService;
 import br.eti.nexus.kernel.application.dto.response.CollectionResponseDTO;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.model.PageModel;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.util.PaginationImp;
@@ -23,12 +22,17 @@ import br.eti.nexus.kernel.messages.domain.MessageStack;
 import br.eti.nexus.kernel.messages.translator.IMessageTranslator;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * 
+ * @author Denis M. Ladeira
+ *
+ */
 @Service
 @Log4j2
-public class PessoaAppService extends PaginationImp<Pessoa> {
+public class ItemVendaAppService extends PaginationImp<ItemVenda> {
 
 	@Autowired
-	private PessoaService service;
+	private ItemVendaService service;
 
 	@Autowired
 	private IMessageTranslator translator;
@@ -37,40 +41,37 @@ public class PessoaAppService extends PaginationImp<Pessoa> {
 	private MessageStack messageStack;
 
 	@Autowired
-	private PessoaConverter converter;
+	private ItemVendaConverter converter;
 
 	@Autowired
-	private PessoaConverterInsert converterInsert;
-	
-	@Autowired
-	private RequisitionUtil<Pessoa> requisition;
+	private RequisitionUtil<ItemVenda> requisition;
 
 	@Autowired
 	private PaginationUtil paginationUtil;
 
 	@Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.READ_COMMITTED, readOnly = false, rollbackFor = {
 			RuntimeException.class, Exception.class })
-	public PessoaDTOInserir salvar(PessoaDTOInserir dto) {
+	public ItemVendaDTO salvar(ItemVendaDTO dto) {
 
-		log.debug(" PessoaAppService.salvar() ");
-		log.debug(" Pessoa: " + dto);
+		log.debug(" ItemVendaAppService.salvar() ");
+		log.debug(" ItemVenda: " + dto);
 
-		Pessoa p = service.inserir(converterInsert.convertModel(dto));
+		ItemVenda iv = service.inserir(converter.convertModel(dto));
 
-		dto = converterInsert.convertDTO(p);
+		dto = converter.convertDTO(iv);
 
 		return dto;
 	}
 
 	@Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.READ_COMMITTED, readOnly = false, rollbackFor = {
 			RuntimeException.class, Exception.class })
-	public PessoaDTO alterar(String id, PessoaDTO dto) {
+	public ItemVendaDTO alterar(String id, ItemVendaDTO dto) {
 
-		log.debug(" PessoaAppService.alterar() ");
+		log.debug(" ItemVendaAppService.alterar() ");
 		log.debug(" ID: " + id);
-		log.debug(" Pessoa: " + dto);
+		log.debug(" ItemVenda: " + dto);
 
-		Pessoa p = service.atualizar(id, converter.convertModel(dto));
+		ItemVenda p = service.atualizar(id, converter.convertModel(dto));
 
 		dto = converter.convertDTO(p);
 
@@ -78,36 +79,36 @@ public class PessoaAppService extends PaginationImp<Pessoa> {
 	}
 
 	@Transactional(propagation = Propagation.NOT_SUPPORTED, isolation = Isolation.DEFAULT, readOnly = true)
-	public CollectionResponseDTO<PessoaDTO> selecionarTodos() {
+	public CollectionResponseDTO<ItemVendaDTO> selecionarTodos() {
 
-		log.debug(" PessoaAppService.selecionarTodos() ");
+		log.debug(" ItemVendaAppService.selecionarTodos() ");
 
 		// CRIAÇÃO DA PAGINAÇÃO
-		requisition.setPage(paginationUtil.generatePagination(PessoaDTO.class));
+		requisition.setPage(paginationUtil.generatePagination(ItemVendaDTO.class));
 		requisition.setWhere(generateWhere());
 
 		// CHAMADA DO SERVIÇO
-		PageModel<Pessoa> page = service.selecionarTodos();
+		PageModel<ItemVenda> page = service.selecionarTodos();
 
 		// CRIAÇÃO DO MODELO DE COLEÇÃO.
-		CollectionResponseDTO<PessoaDTO> pessoas = converter.convertManyCollectionResponse(page.getData());
-		pessoas.setKeep(page.getHasNext());
+		CollectionResponseDTO<ItemVendaDTO> itemsdevenda = converter.convertManyCollectionResponse(page.getData());
+		itemsdevenda.setKeep(page.getHasNext());
 
-		return pessoas;
+		return itemsdevenda;
 	}
 
 	@Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.READ_COMMITTED, readOnly = false, rollbackFor = {
 			RuntimeException.class, Exception.class })
-	public PessoaDTO excluir(String id) {
+	public ItemVendaDTO excluir(String id) {
 
-		log.debug(" PessoaAppService.excluir() ");
+		log.debug(" ItemVendaAppService.excluir() ");
 		log.debug(" ID: " + id);
 
 		// EXECUTAR SERVIÇO
 		service.excluir(id);
 
 		// REALIZAR TRADUÇÃO
-		PessoaDTO dto = new PessoaDTO();
+		ItemVendaDTO dto = new ItemVendaDTO();
 		translator.translateMessages(messageStack.getMessages());
 		dto.setMessages(messageStack.getMessages());
 
@@ -115,26 +116,26 @@ public class PessoaAppService extends PaginationImp<Pessoa> {
 	}
 
 	@Override
-	protected Pessoa createModel() {
+	protected ItemVenda createModel() {
 
-		log.debug(" PessoaAppService.createModel() ");
+		log.debug(" ItemVendaAppService.createModel() ");
 
 		// CAPTURANDO ATRIBUTOS DA REQUISIÇÃO.
 		Map<String, Object> queryAttributes = requisition.getAttributes().generateQuery();
 
 		if (queryAttributes != null && !queryAttributes.isEmpty()) {
-			Pessoa.PessoaBuilder builder = Pessoa.builder();
+			ItemVenda.ItemVendaBuilder builder = ItemVenda.builder();
 
 			if (queryAttributes.containsKey("id")) {
 				builder.id(String.valueOf(queryAttributes.get("id")));
 			}
 
-			if (queryAttributes.containsKey("code")) {
-				builder.codigo(Long.parseLong(queryAttributes.get("code").toString()));
+			if (queryAttributes.containsKey("quantity")) {
+				builder.quantidade(Integer.parseInt(queryAttributes.get("quantity").toString()));
 			}
-
-			if (queryAttributes.containsKey("name")) {
-				builder.nome(String.valueOf(queryAttributes.get("name")));
+			
+			if (queryAttributes.containsKey("item_value")) {
+				builder.valor_item(new BigDecimal(String.valueOf(queryAttributes.get("item_value"))));
 			}
 
 			return builder.build();

@@ -1,4 +1,4 @@
-package br.com.teste.poc.controller.pessoa;
+package br.com.teste.poc.controller.venda;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,11 +13,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.teste.poc.app.pessoa.PessoaAppService;
-import br.com.teste.poc.app.pessoa.dto.PessoaDTO;
-import br.com.teste.poc.app.pessoa.dto.PessoaDTOInserir;
-import br.com.teste.poc.app.pessoa.dto.PessoaRequestDTO;
-import br.com.teste.poc.domain.pessoa.Pessoa;
+import br.com.teste.poc.app.venda.VendaAppService;
+import br.com.teste.poc.app.venda.dto.VendaDTO;
+import br.com.teste.poc.app.venda.dto.VendaRequestDTO;
+import br.com.teste.poc.domain.venda.Venda;
 import br.eti.nexus.kernel.application.dto.response.CollectionResponseDTO;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.util.RequisitionUtil;
 import lombok.extern.log4j.Log4j2;
@@ -25,52 +24,52 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 @CrossOrigin
 @RestController
-@RequestMapping("/v1/pessoa")
-public class PessoaController {
+@RequestMapping("/v1/venda")
+public class VendaController {
 
 	@Autowired
-	private PessoaAppService appService;
+	private VendaAppService appService;
 
 	@Autowired
-	private RequisitionUtil<Pessoa> requisition;
+	private RequisitionUtil<Venda> requisition;
 
 	@PostMapping
-	public ResponseEntity<?> inserir(@RequestBody PessoaDTOInserir dto) {
+	public ResponseEntity<?> inserir(@RequestBody VendaDTO dto) {
 
 		log.debug(" ");
-		log.debug(" PessoaController.inserir ");
-		log.debug(" Parâmetro PessoaDTO: " + dto);
+		log.debug(" VendaController.inserir ");
+		log.debug(" Parâmetro VendaDTO: " + dto);
 		log.debug(" ");
 
-		PessoaDTOInserir result = appService.salvar(dto);
+		VendaDTO result = appService.salvar(dto);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 
 	@PutMapping("/{id}")
-	public ResponseEntity<?> update(@PathVariable String id, @RequestBody PessoaDTO dto) {
+	public ResponseEntity<?> update(@PathVariable String id, @RequestBody VendaDTO dto) {
 
 		log.debug(" ");
-		log.debug(" PessoaController.alterar ");
+		log.debug(" VendaController.alterar ");
 		log.debug(" Parâmetro ID: " + id);
-		log.debug(" Parâmetro PessoaDTO: " + dto);
+		log.debug(" Parâmetro VendaDTO: " + dto);
 		log.debug(" ");
 
-		PessoaDTO result = appService.alterar(id, dto);
+		VendaDTO result = appService.alterar(id, dto);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 
 	@GetMapping
-	public ResponseEntity<CollectionResponseDTO<PessoaDTO>> selecionarTodos(PessoaRequestDTO request) {
+	public ResponseEntity<CollectionResponseDTO<VendaDTO>> selecionarTodos(VendaRequestDTO request) {
 
 		log.debug(" ");
-		log.debug(" PessoaController.selecionarTodos ");
+		log.debug(" VendaController.selecionarTodos ");
 		log.debug(" Request: " + request);
 		log.debug(" ");
 
 		// SETANDO ATRIBUTOS DA REQUISIÇÃO.
 		requisition.setAttributes(request);
 
-		CollectionResponseDTO<PessoaDTO> result = appService.selecionarTodos();
+		CollectionResponseDTO<VendaDTO> result = appService.selecionarTodos();
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 
@@ -78,11 +77,11 @@ public class PessoaController {
 	public ResponseEntity<?> excluir(@PathVariable String id) {
 
 		log.debug(" ");
-		log.debug(" PessoaController.excluir ");
+		log.debug(" VendaController.excluir ");
 		log.debug(" ID: " + id);
 		log.debug(" ");
 
-		PessoaDTO result = appService.excluir(id);
+		VendaDTO result = appService.excluir(id);
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
 

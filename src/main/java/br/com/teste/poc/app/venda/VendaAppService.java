@@ -1,5 +1,6 @@
-package br.com.teste.poc.app.pessoa;
+package br.com.teste.poc.app.venda;
 
+import java.math.BigDecimal;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,27 +9,31 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.teste.poc.app.pessoa.converter.PessoaConverter;
-import br.com.teste.poc.app.pessoa.converter.PessoaConverterInsert;
-import br.com.teste.poc.app.pessoa.dto.PessoaDTO;
-import br.com.teste.poc.app.pessoa.dto.PessoaDTOInserir;
-import br.com.teste.poc.domain.pessoa.Pessoa;
-import br.com.teste.poc.domain.pessoa.service.PessoaService;
+import br.com.teste.poc.app.venda.converter.VendaConverter;
+import br.com.teste.poc.app.venda.dto.VendaDTO;
+import br.com.teste.poc.domain.venda.Venda;
+import br.com.teste.poc.domain.venda.service.VendaService;
 import br.eti.nexus.kernel.application.dto.response.CollectionResponseDTO;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.model.PageModel;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.util.PaginationImp;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.util.PaginationUtil;
 import br.eti.nexus.kernel.infrastructure.dynamic.jpa.util.RequisitionUtil;
+import br.eti.nexus.kernel.infrastructure.util.DateUtil;
 import br.eti.nexus.kernel.messages.domain.MessageStack;
 import br.eti.nexus.kernel.messages.translator.IMessageTranslator;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * 
+ * @author Denis M. Ladeira
+ *
+ */
 @Service
 @Log4j2
-public class PessoaAppService extends PaginationImp<Pessoa> {
+public class VendaAppService extends PaginationImp<Venda> {
 
 	@Autowired
-	private PessoaService service;
+	private VendaService service;
 
 	@Autowired
 	private IMessageTranslator translator;
@@ -37,40 +42,37 @@ public class PessoaAppService extends PaginationImp<Pessoa> {
 	private MessageStack messageStack;
 
 	@Autowired
-	private PessoaConverter converter;
+	private VendaConverter converter;
 
 	@Autowired
-	private PessoaConverterInsert converterInsert;
-	
-	@Autowired
-	private RequisitionUtil<Pessoa> requisition;
+	private RequisitionUtil<Venda> requisition;
 
 	@Autowired
 	private PaginationUtil paginationUtil;
 
 	@Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.READ_COMMITTED, readOnly = false, rollbackFor = {
 			RuntimeException.class, Exception.class })
-	public PessoaDTOInserir salvar(PessoaDTOInserir dto) {
+	public VendaDTO salvar(VendaDTO dto) {
 
-		log.debug(" PessoaAppService.salvar() ");
-		log.debug(" Pessoa: " + dto);
+		log.debug(" VendaAppService.salvar() ");
+		log.debug(" Venda: " + dto);
 
-		Pessoa p = service.inserir(converterInsert.convertModel(dto));
+		Venda p = service.inserir(converter.convertModel(dto));
 
-		dto = converterInsert.convertDTO(p);
+		dto = converter.convertDTO(p);
 
 		return dto;
 	}
 
 	@Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.READ_COMMITTED, readOnly = false, rollbackFor = {
 			RuntimeException.class, Exception.class })
-	public PessoaDTO alterar(String id, PessoaDTO dto) {
+	public VendaDTO alterar(String id, VendaDTO dto) {
 
-		log.debug(" PessoaAppService.alterar() ");
+		log.debug(" VendaAppService.alterar() ");
 		log.debug(" ID: " + id);
-		log.debug(" Pessoa: " + dto);
+		log.debug(" Venda: " + dto);
 
-		Pessoa p = service.atualizar(id, converter.convertModel(dto));
+		Venda p = service.atualizar(id, converter.convertModel(dto));
 
 		dto = converter.convertDTO(p);
 
@@ -78,36 +80,36 @@ public class PessoaAppService extends PaginationImp<Pessoa> {
 	}
 
 	@Transactional(propagation = Propagation.NOT_SUPPORTED, isolation = Isolation.DEFAULT, readOnly = true)
-	public CollectionResponseDTO<PessoaDTO> selecionarTodos() {
+	public CollectionResponseDTO<VendaDTO> selecionarTodos() {
 
-		log.debug(" PessoaAppService.selecionarTodos() ");
+		log.debug(" VendaAppService.selecionarTodos() ");
 
 		// CRIAÇÃO DA PAGINAÇÃO
-		requisition.setPage(paginationUtil.generatePagination(PessoaDTO.class));
+		requisition.setPage(paginationUtil.generatePagination(VendaDTO.class));
 		requisition.setWhere(generateWhere());
 
 		// CHAMADA DO SERVIÇO
-		PageModel<Pessoa> page = service.selecionarTodos();
+		PageModel<Venda> page = service.selecionarTodos();
 
 		// CRIAÇÃO DO MODELO DE COLEÇÃO.
-		CollectionResponseDTO<PessoaDTO> pessoas = converter.convertManyCollectionResponse(page.getData());
-		pessoas.setKeep(page.getHasNext());
+		CollectionResponseDTO<VendaDTO> Vendas = converter.convertManyCollectionResponse(page.getData());
+		Vendas.setKeep(page.getHasNext());
 
-		return pessoas;
+		return Vendas;
 	}
 
 	@Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.READ_COMMITTED, readOnly = false, rollbackFor = {
 			RuntimeException.class, Exception.class })
-	public PessoaDTO excluir(String id) {
+	public VendaDTO excluir(String id) {
 
-		log.debug(" PessoaAppService.excluir() ");
+		log.debug(" VendaAppService.excluir() ");
 		log.debug(" ID: " + id);
 
 		// EXECUTAR SERVIÇO
 		service.excluir(id);
 
 		// REALIZAR TRADUÇÃO
-		PessoaDTO dto = new PessoaDTO();
+		VendaDTO dto = new VendaDTO();
 		translator.translateMessages(messageStack.getMessages());
 		dto.setMessages(messageStack.getMessages());
 
@@ -115,15 +117,15 @@ public class PessoaAppService extends PaginationImp<Pessoa> {
 	}
 
 	@Override
-	protected Pessoa createModel() {
+	protected Venda createModel() {
 
-		log.debug(" PessoaAppService.createModel() ");
+		log.debug(" VendaAppService.createModel() ");
 
 		// CAPTURANDO ATRIBUTOS DA REQUISIÇÃO.
 		Map<String, Object> queryAttributes = requisition.getAttributes().generateQuery();
 
 		if (queryAttributes != null && !queryAttributes.isEmpty()) {
-			Pessoa.PessoaBuilder builder = Pessoa.builder();
+			Venda.VendaBuilder builder = Venda.builder();
 
 			if (queryAttributes.containsKey("id")) {
 				builder.id(String.valueOf(queryAttributes.get("id")));
@@ -133,8 +135,12 @@ public class PessoaAppService extends PaginationImp<Pessoa> {
 				builder.codigo(Long.parseLong(queryAttributes.get("code").toString()));
 			}
 
-			if (queryAttributes.containsKey("name")) {
-				builder.nome(String.valueOf(queryAttributes.get("name")));
+			if (queryAttributes.containsKey("date_sale")) {
+				builder.data_venda(new DateUtil().parseDate(String.valueOf(queryAttributes.get("date_sale"))));
+			}
+			
+			if (queryAttributes.containsKey("unit_value")) {
+				builder.valor_total(new BigDecimal(String.valueOf(queryAttributes.get("total_value"))));
 			}
 
 			return builder.build();
